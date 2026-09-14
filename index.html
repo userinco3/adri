@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adrian Zambrano</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .pagina {
+            width: 100%;
+            max-width: 850px;
+            background: rgba(255, 255, 255, 0.10);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            border-radius: 25px;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(10px);
+        }
+
+        .icono {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-weight: normal;
+            color: #bfdbfe;
+        }
+
+        .linea {
+            width: 80%;
+            height: 3px;
+            background: #60a5fa;
+            margin: 25px auto;
+            border-radius: 10px;
+        }
+
+        .informacion {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .dato {
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 18px;
+            padding: 20px;
+        }
+
+        .dato .emoji {
+            font-size: 30px;
+        }
+
+        .dato strong {
+            display: block;
+            margin: 8px 0;
+            color: #93c5fd;
+        }
+
+        .mensaje {
+            background: rgba(0, 0, 0, 0.18);
+            padding: 25px;
+            border-radius: 20px;
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 25px;
+            background: #3b82f6;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #60a5fa;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #bfdbfe;
+            font-size: 14px;
+        }
+
+        @media (max-width: 650px) {
+            .pagina {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .informacion {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pagina">
+
+        <div class="icono">💻</div>
+
+        <h1>Adrian Zambrano</h1>
+
+        <h2>Mi página web personal</h2>
+
+        <div class="linea"></div>
+
+        <div class="informacion">
+
+            <div class="dato">
+                <div class="emoji">👨‍🎓</div>
+                <strong>Nombre</strong>
+                Adrian Zambrano
+            </div>
+
+            <div class="dato">
+                <div class="emoji">📚</div>
+                <strong>Curso</strong>
+                2D
+            </div>
+
+            <div class="dato">
+                <div class="emoji">🏫</div>
+                <strong>Colegio</strong>
+                Alfredo Poveda
+            </div>
+
+        </div>
+
+        <div class="mensaje">
+            <h2>¡Bienvenido a mi página! 👋</h2>
+
+            <p>
+                Esta es mi página web personal creada con HTML y CSS.
+            </p>
+
+            <p>
+                Aquí puedes conocer un poco sobre mí y mi información escolar.
+            </p>
+        </div>
+
+        <button onclick="saludar()">
+            ✨ Haz clic aquí
+        </button>
+
+        <footer>
+            © 2026 Adrian Zambrano
+        </footer>
+
+    </div>
+
+    <script>
+        function saludar() {
+            alert("¡Hola! Bienvenido a la página de Adrian Zambrano 👋");
+        }
+    </script>
+
+</body>
+</html>
